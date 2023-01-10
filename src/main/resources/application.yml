@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/vol-med?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: user
+    driver-class-name: com.mysql.jdbc.Driver
+#  jpa:
+#    open-in-view: false
+#    show-sql: false
+#    hibernate:
+#      ddl-auto: none
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+#        storage_engine: innodb
+#        globally_quoted_identifiers: true
+#        show_sql: false
+#        format_sql: false
+#        use_sql_comments: false
+#        jdbc:
+#          time_zone: UTC

@@ -1,0 +1,37 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+  db-vol-med:
+    container_name: db-vol-med
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: interfit-dev
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+      MYSQL_ROOT_PASSWORD: user
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker/.docker/db-vol-med:/var/lib/mysql
+      - ./docker/mysql/my.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+    networks:
+      - app-network
+    entrypoint:
+      - docker-entrypoint.sh
+      - mysqld
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8081:8081"
+
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
