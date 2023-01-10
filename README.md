@@ -6,7 +6,7 @@ Código do Curso de
 O curso aborda um projeto de uma clínica médica fictícia chamada Voll Med, 
 que precisa de um aplicativo para monitorar o cadastro de médicos, pacientes e agendamento de consultas.
 
-O foco do curso é o back-end, assim foi realizado desenvolimento de uma API REST com o Spring Boot 3 utilizando o Java 17.
+O foco do curso é o back-end, assim foi realizado desenvolvimento de uma API REST com o Spring Boot 3 utilizando o Java 17.
 
 Fiz o curso para verificar as principais mudanças no Spring Boot 3.0 
 
